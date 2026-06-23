@@ -1,0 +1,129 @@
+/* Remise à zéro basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fond de la page internet */
+body {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+/* Conteneur de tout le CV (Feuille blanche A4) */
+.cv-global {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* BANDEAU SUPÉRIEUR BLEU */
+.entete {
+    background-color: #1E2D4A; /* Bleu nuit pro */
+    color: #ffffff;
+    padding: 30px;
+    display: flex; /* Aligne le texte et la photo sur la même ligne */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entete-texte h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.entete-texte h2 {
+    font-size: 16px;
+    color: #cbd5e0;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.entete-texte p {
+    font-size: 13px;
+    font-style: italic;
+    color: #a0aec0;
+}
+
+/* LE ROND DE LA PHOTO */
+.entete-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    object-fit: cover;  /* Empêche l'image de se déformer */
+    border: 2px solid #ffffff; /* Petit liseré blanc */
+}
+
+/* CORPS DU CV EN 2 COLONNES */
+.corps {
+    display: flex;
+}
+
+/* Colonne Gauche (30% de la largeur) */
+.colonne-gauche {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+
+/* Colonne Droite (70% de la largeur) */
+.colonne-droite {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Espacement entre chaque bloc de contenu */
+.bloc {
+    margin-bottom: 25px;
+}
+
+/* Style de vos titres signatures */
+h3 {
+    font-size: 15px;
+    color: #1E2D4A;
+    margin-bottom: 10px;
+}
+
+/* Textes et paragraphes basiques */
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* Formations et projets individuels */
+.ligne-formation, .ligne-projet {
+    margin-bottom: 12px;
+}
+
+.date {
+    font-size: 11px;
+    font-weight: bold;
+    color: #666;
+}
+
+.lieu {
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+}
+
+/* BOUTON IMPRIMER */
+#bouton-imprimer {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E2D4A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+#bouton-imprimer:hover {
+    background-color: #31456a;
+}
